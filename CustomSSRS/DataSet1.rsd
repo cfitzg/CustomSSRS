@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>dsMockData</DataSourceReference>
+      <CommandText>/****** Script for SelectTopNRows command from SSMS  ******/
+SELECT TOP (1000) [OrderID]
+      ,[CustomerID]
+      ,[SalespersonPersonID]
+      ,[PickedByPersonID]
+      ,[ContactPersonID]
+      ,[BackorderOrderID]
+      ,[OrderDate]
+      ,[ExpectedDeliveryDate]
+      ,[CustomerPurchaseOrderNumber]
+      ,[IsUndersupplyBackordered]
+      ,[Comments]
+      ,[DeliveryInstructions]
+      ,[InternalComments]
+      ,[PickingCompletedWhen]
+      ,[LastEditedBy]
+      ,[LastEditedWhen]
+  FROM [WideWorldImporters].[Sales].[Orders]</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="OrderID">
+        <DataField>OrderID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="CustomerID">
+        <DataField>CustomerID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="SalespersonPersonID">
+        <DataField>SalespersonPersonID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="PickedByPersonID">
+        <DataField>PickedByPersonID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="ContactPersonID">
+        <DataField>ContactPersonID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="BackorderOrderID">
+        <DataField>BackorderOrderID</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="OrderDate">
+        <DataField>OrderDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="ExpectedDeliveryDate">
+        <DataField>ExpectedDeliveryDate</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="CustomerPurchaseOrderNumber">
+        <DataField>CustomerPurchaseOrderNumber</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="IsUndersupplyBackordered">
+        <DataField>IsUndersupplyBackordered</DataField>
+        <rd:TypeName>System.Boolean</rd:TypeName>
+      </Field>
+      <Field Name="Comments">
+        <DataField>Comments</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="DeliveryInstructions">
+        <DataField>DeliveryInstructions</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="InternalComments">
+        <DataField>InternalComments</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PickingCompletedWhen">
+        <DataField>PickingCompletedWhen</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="LastEditedBy">
+        <DataField>LastEditedBy</DataField>
+        <rd:TypeName>System.Int32</rd:TypeName>
+      </Field>
+      <Field Name="LastEditedWhen">
+        <DataField>LastEditedWhen</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
